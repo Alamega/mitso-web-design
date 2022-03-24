@@ -1,13 +1,31 @@
 *{
     margin: 0;
-    padding: 0;
     font-family: 'Montserrat';
-
 }
 
-.block1 {
-    display: block;
-    position: static;
+.container {
+    max-width: 1200px;
+    font-size: 24px;
+}
+
+h1 {
+    line-height: 138%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    font-size: 3.5em;
+}
+
+h3 {
+    line-height: 138%;
+    color: #252B42;
+    font-size: 1.5em;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
     background-image:url(img/fon1.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -19,12 +37,11 @@
     display: flex;
     align-items: center;
     align-content: flex-start;
-    position: relative;
-    width: 87%;
+    width: 74vw;
     height: 12%;
-    left: 13%;
+    margin: 0 13vw;
     top: 2%; 
-    font-size: 1vw;
+    justify-content: space-between;
 }
  
  .flexbox1 {
@@ -34,128 +51,120 @@
      flex: 0 1 auto;
  }
  
-     .flexbox1:nth-child(1) {
-     margin: 0 0 0 0%;
-     }
-     .flexbox1:nth-child(2) {
-     margin: 0 0 0 42%;
+ .flexbox1:nth-child(1) {
+    margin: 0;
+    }
+    .flexbox1:nth-child(2) {
+    margin: 0;
     }
     .flexbox1:nth-child(3) {
-     margin: 0 0 0 1%;
-    }
-    .flexbox1:nth-child(4) {
-     margin: 0 0 0 1%;
-    }
-    .flexbox1:nth-child(5) {
-     margin: 0 0 0 1%;
-    }
-    .flexbox1:nth-child(6) {
-     margin: 0 0 0 2%;
-    }
-    .flexbox1:nth-child(7) {
-     margin: 0 0 0 1%;
-    }
-    .flexbox1:nth-child(8) {
-     margin: 0 0 0 11%;
+    margin: 0;
     }
  
-    
- h3 {
-     font-style: normal;
-     font-size: 1.7vw;
-     color: #252B42;
+.flexbox1 img {
+   padding: 4px;
+}
+
+.flexbox1 span {
+    padding: 4px;
  }
 
 
-.block1_cont {
-    border-style: double;
-    border-color: red;
 
-    position: relative;
+.more_customers {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    align-content: space-around;
-    width: 74%;
-    height: 85%;;
-    left: 13%;
+    width: 70%;
+    margin: 0 15vw;
 
 }
 
-.block1_1 {
-    border-style: double;
-    border-color: black;
-
-    display: block;
-    position: static;
-    width: 55%;
-    padding-top: 17vh;
-
+.more_customers_text {
+    margin-top: 15vh ;
 }
-
+.more_customers_text p {
+    color: #737373;
+    font-size: 1.3em;
+    margin: 40px 0;
+}
 .btn_cont {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    position: static;
 }
 
-.a1 {
+.blue_btn {
+    flex: none;
     text-decoration: none;
     color:white;
     display: flex;
     align-items: center;
-    padding: 10px 36px;
-    position: static;
     background: #00A0C1;
     border-radius: 37px;
-    margin-right: 3vw;
     justify-content: center;
-    margin: 1%;
-    line-height: 3vh;
-    font-size: 0.9vw;
+    height: 50px;
+    width: 200px;
 }
 
-.block1 p {
-    color: #737373;
-    font-size: 1.5vw;
-    margin: 4vh 0vw;
-}
-
-.a2 {
+.not_blue_btn {
+    flex: none;
     text-decoration: none;
     color:#00A0C1;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 10px 36px;
-    position: static;
     border: 1px solid #00A0C1;
     box-sizing: border-box;
     border-radius: 37px;
     justify-content: center;
-    margin: 1%;
-    line-height: 3vh;
-    font-size: 0.9vw;
+    height: 50px;
+    width: 200px;
+    margin-left: 20px;
+
 }
 
-.block1_2 {
-    border-style: double;
-    border-color: black;
-
-    display: block;
-    position: static;
-    width: 35%;
+.more_customers_form {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 10px;
+    width: 40%;
+    padding: 2vh 2vw;
+    line-height: 4vh;
+    margin-left: 15vw;
 }
 
-.block1 h1 {
-    position: static;
+.more_customers_form span{
+    align-self: center;
+    padding: 20px 0;
+}
 
-    font-size: 4vw;
-    line-height: 138%;
-    letter-spacing: 0.2px;
-    color: #252B42;
+.more_customers_form h3{
+    font-size: 18px;
+}
+
+.yellow_btn {
+    flex: none;
+    text-decoration: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    align-self:center;
+    background: #FFA62B;
+    border-radius: 5px;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+}
+
+input {
+    background: #F9F9F9;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 30px;
 }
 
 .block2 {
