@@ -33,7 +33,7 @@ header {
     display: flex;
     align-items: center;
     align-content: flex-start;
-    width: 75%;
+    width: 70%;
     height: 12%;
     margin: 2% 12.5%;
     padding: 0 3%;
@@ -51,14 +51,23 @@ header {
     margin: 0;
     }
     .flexbox1:nth-child(2) {
-    margin: 0;
+    margin-left: 30%;
     }
     .flexbox1:nth-child(3) {
+    margin: 0;
+    }    
+    .flexbox1:nth-child(4) {
     margin: 0;
     }
  
 .flexbox1 img {
    padding: 4px;
+   height: 30%;
+   width: 30%;
+}
+.flexbox1:nth-child(4) img {
+    height: 80%;
+    width: 80%;
 }
 
 .flexbox1 span {
@@ -88,7 +97,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     height: 15%;
 }
 
@@ -130,7 +139,7 @@ header {
     padding: 3%;
     background: #FFFFFF;
     border-radius: 10px;
-    height: 50%;
+    height: 70%;
 }
 
 .card-content {
@@ -160,26 +169,19 @@ header {
 }
 
 input {
-    flex: none;
     background: #F9F9F9;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
     width: 100%;
+    height: 20%;
     box-sizing: border-box;
     margin-bottom: 4%;
 }
 
-@media (min-width: 0px) and (max-width: 900px) {
-    .blue_btn {width: 100px; height: 25px;}
-    .not_blue_btn {width: 100px; height: 25px;}
-    
-    input {min-height: 20px; margin-bottom: 5px;}
-}
-
 .more_customers_form span{
     align-self: center;
-    padding: 10px 0;
+    padding-bottom: 10%;
 }
 
 .more_customers_form h3{
@@ -194,12 +196,22 @@ input {
     background: #F3F3F3;
 }
 
-.row1 {
+.row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%; 
+}
+
+.row h3 {
+    text-align: center;
+}
+
+.vidos {
+    height: 60%;
+    width: 60%;
+    padding: 5%;
 }
 
 .cartonki1 {
@@ -211,7 +223,6 @@ input {
     margin: 5%;
     width: 80%;
 }
-
 
 .card1 {
     display: flex;
@@ -261,7 +272,7 @@ input {
 
 .zagolovok h3 {
     font-size: 3em;
-    margin: 12% 0 3% 0 ;
+    margin: 5% 0 3% 0 ;
 }
 
 .zagolovok p {
@@ -295,10 +306,74 @@ input {
     height: 10%;
 }
 
+.card2_profil {  
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    margin: 5%;
+    grid-template-areas:
+      "photo info";
+  }
+  .photo { 
+      grid-area: photo; 
+    }
+  .info { 
+      grid-area: info; 
+    }
+  
+    .card2_profil img {
+        height: 90%;
+        width: 90%;
+    }
+
+    .card2_profil span {
+        color: #FFA62B;
+        line-height: 138%;
+    }
+
 .block3 {
     display: block;
     position: static;
     width: 100%;
     height: 100vh;
     background: black;
+}
+
+.meet_our_team_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 5% 0;
+}
+
+.teammate {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;   
+}
+
+.teammate img {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact img {
+    margin: 1%;
+    height: 8%;
+    width: 8%;
+}
+@media (min-width: 0px) and (max-width: 900px) {
+
 }
